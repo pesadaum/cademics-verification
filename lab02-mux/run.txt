@@ -1,0 +1,111 @@
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:34:07 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: placeholder.v
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+file: scale_mux_test.sv
+	module worklib.scale_mux_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  scale_mux #(WIDTH) mux8 (.out(out), .in_a(in_a), .in_b(in_b), .sel_a(sel_a));
+                  |
+xmelab: *E,CUTMIP (./scale_mux_test.sv,26|18): Too many module instance parameter assignments (definition in file ./scale_mux.sv, line 1).
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:34:08 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:35:10 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './scale_mux.sv' is newer than expected.
+	expected: Mon Mar  4 18:34:06 2024
+	actual:   Mon Mar  4 18:35:10 2024
+file: placeholder.v
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		scale_mux_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.scale_mux:sv <0x41349889>
+			streams:   1, words:   276
+		worklib.scale_mux_test:sv <0x720e8b98>
+			streams:   8, words: 12529
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 6       6
+		Scalar wires:              1       -
+		Vectored wires:            4       -
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Pseudo assignments:        4       4
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.scale_mux_test:sv
+Loading snapshot worklib.scale_mux_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+0ns in_a=00 in_b=00 sel_a=0 out=00
+1ns in_a=00 in_b=00 sel_a=1 out=00
+2ns in_a=00 in_b=ff sel_a=0 out=ff
+3ns in_a=00 in_b=ff sel_a=1 out=00
+4ns in_a=ff in_b=00 sel_a=0 out=00
+5ns in_a=ff in_b=00 sel_a=1 out=ff
+6ns in_a=ff in_b=ff sel_a=0 out=ff
+7ns in_a=ff in_b=ff sel_a=1 out=ff
+MUX TEST PASSED
+./scale_mux_test.sv:58       $finish(0) ;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:35:12 -03  (total: 00:00:02)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:46:09 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './scale_mux.sv' is newer than expected.
+	expected: Mon Mar  4 18:35:10 2024
+	actual:   Mon Mar  4 18:46:08 2024
+file: scale_mux.sv
+	module worklib.scale_mux:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		scale_mux_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.scale_mux:sv <0x41349889>
+			streams:   1, words:   276
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 6       6
+		Scalar wires:              1       -
+		Vectored wires:            4       -
+		Always blocks:             1       1
+		Initial blocks:            2       2
+		Pseudo assignments:        4       4
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.scale_mux_test:sv
+Loading snapshot worklib.scale_mux_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+0ns in_a=00 in_b=00 sel_a=0 out=00
+1ns in_a=00 in_b=00 sel_a=1 out=00
+2ns in_a=00 in_b=ff sel_a=0 out=ff
+3ns in_a=00 in_b=ff sel_a=1 out=00
+4ns in_a=ff in_b=00 sel_a=0 out=00
+5ns in_a=ff in_b=00 sel_a=1 out=ff
+6ns in_a=ff in_b=ff sel_a=0 out=ff
+7ns in_a=ff in_b=ff sel_a=1 out=ff
+MUX TEST PASSED
+./scale_mux_test.sv:58       $finish(0) ;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:46:10 -03  (total: 00:00:01)

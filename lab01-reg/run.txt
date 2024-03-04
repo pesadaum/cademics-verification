@@ -1,0 +1,77 @@
+xrun: *W,WLDNO: The given file wild card *.v did not have a match.
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:09:39 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+xrun: *E,FILEMIS: Cannot find the provided file *.v.
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:09:40 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:10:04 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: placeholder.v
+file: register.sv
+	module worklib.register:sv
+		errors: 0, warnings: 0
+file: register_test.sv
+	module worklib.register_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		register_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  always_ff @* begin : main
+          |
+xmelab: *E,SVFFMT (./register.sv,10|10): The always_ff process requires one and only one event control.
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:10:05 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 04, 2024 at 18:10:51 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './register.sv' is newer than expected.
+	expected: Mon Mar  4 18:10:03 2024
+	actual:   Mon Mar  4 18:10:51 2024
+file: placeholder.v
+file: register.sv
+	module worklib.register:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		register_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.register:sv <0x26feec3e>
+			streams:   2, words:   552
+		worklib.register_test:sv <0x0bfe0aad>
+			streams:  12, words: 18577
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 7       7
+		Scalar wires:              3       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            4       4
+		Pseudo assignments:        5       5
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.register_test:sv
+Loading snapshot worklib.register_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+time=   0.0 ns enable=x rst_=1 data=xx out=xx
+time=  15.0 ns enable=x rst_=0 data=xx out=00
+time=  25.0 ns enable=0 rst_=1 data=xx out=00
+time=  35.0 ns enable=1 rst_=1 data=aa out=00
+time=  40.0 ns enable=1 rst_=1 data=aa out=aa
+time=  45.0 ns enable=0 rst_=1 data=55 out=aa
+time=  55.0 ns enable=x rst_=0 data=xx out=00
+time=  65.0 ns enable=0 rst_=1 data=xx out=00
+time=  75.0 ns enable=1 rst_=1 data=55 out=00
+time=  80.0 ns enable=1 rst_=1 data=55 out=55
+time=  85.0 ns enable=0 rst_=1 data=aa out=55
+REGISTER TEST PASSED
+Simulation complete via $finish(1) at time 95 NS + 0
+./register_test.sv:65       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 18:10:54 -03  (total: 00:00:03)
