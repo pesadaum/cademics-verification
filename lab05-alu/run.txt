@@ -1,0 +1,180 @@
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:04:22 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+	package worklib.typedefs:sv
+		errors: 0, warnings: 0
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: alu_test.sv
+package typedefs;
+               |
+xmvlog: *W,RECOME (alu_test.sv,13|15): recompiling design unit worklib.typedefs:sv.
+	First compiled from line 1 of alu.sv.
+xmvlog: *E,DLCIRD: Circular dependency encountered for design unit 'worklib.typedefs:sv'.
+	package worklib.typedefs:sv
+		errors: 1, warnings: 1
+	module worklib.alu_test:sv
+		errors: 0, warnings: 0
+file: typedefs.sv
+package typedefs;
+               |
+xmvlog: *W,RECOME (typedefs.sv,1|15): recompiling design unit worklib.typedefs:sv.
+	First compiled from line 1 of alu.sv.
+xmvlog: *E,DLCIRD: Circular dependency encountered for design unit 'worklib.typedefs:sv'.
+	package worklib.typedefs:sv
+		errors: 1, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:04:23 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:05:06 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu.sv,3|14): Package typedefs could not be bound.
+  input  opcode_t           opcode,
+                |
+xmvlog: *E,SVNOTY (alu.sv,11|16): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+	module worklib.alu:sv
+		errors: 1, warnings: 0
+file: alu_test.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu_test.sv,14|14): Package typedefs could not be bound.
+opcode_t       opcode  = HLT;
+                       |
+xmvlog: *E,EXPSMC (alu_test.sv,25|23): expecting a semicolon (';') [12.3.2(IEEE)].
+	module worklib.alu_test:sv
+		errors: 1, warnings: 0
+file: typedefs.sv
+	package worklib.typedefs:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:05:07 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:08:22 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: alu_test.sv
+	module worklib.alu_test:sv
+		errors: 0, warnings: 0
+file: typedefs.sv
+xmvlog: *E,DLCIRD: Circular dependency encountered for design unit 'worklib.typedefs:sv'.
+	package worklib.typedefs:sv
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:08:22 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:09:44 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu.sv,1|14): Package typedefs could not be bound.
+  input  opcode_t    opcode,
+                |
+xmvlog: *E,SVNOTY (alu.sv,6|16): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+	module worklib.alu:sv
+		errors: 1, warnings: 0
+file: alu_test.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu_test.sv,14|14): Package typedefs could not be bound.
+opcode_t       opcode  = HLT;
+                       |
+xmvlog: *E,EXPSMC (alu_test.sv,25|23): expecting a semicolon (';') [12.3.2(IEEE)].
+	module worklib.alu_test:sv
+		errors: 1, warnings: 0
+file: typedefs.sv
+	package worklib.typedefs:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:09:45 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:10:53 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu.sv,1|14): Package typedefs could not be bound.
+  input  opcode_t    opcode,
+                |
+xmvlog: *E,SVNOTY (alu.sv,6|16): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+	module worklib.alu:sv
+		errors: 1, warnings: 0
+file: alu_test.sv
+import typedefs::*;
+              |
+xmvlog: *E,NOPBIND (alu_test.sv,14|14): Package typedefs could not be bound.
+opcode_t       opcode  = HLT;
+                       |
+xmvlog: *E,EXPSMC (alu_test.sv,25|23): expecting a semicolon (';') [12.3.2(IEEE)].
+	module worklib.alu_test:sv
+		errors: 1, warnings: 0
+file: typedefs.sv
+	package worklib.typedefs:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:10:54 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:12:09 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: alu_test.sv
+	module worklib.alu_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		typedefs
+		$unit_0x6528584e
+		alu_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x3dc3a3b9>
+			streams:   4, words:  1549
+		worklib.alu_test:sv <0x41352218>
+			streams:  12, words: 22639
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Verilog packages:          1       1
+		Registers:                 9       9
+		Scalar wires:              3       -
+		Vectored wires:            5       -
+		Always blocks:             3       3
+		Initial blocks:            4       4
+		Pseudo assignments:        6       6
+		Compilation units:         1       1
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.alu_test:sv
+Loading snapshot worklib.alu_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+  20.0 ns opcode=HLT data=37 accum=da | zero=0 out=da
+  30.0 ns opcode=SKZ data=37 accum=da | zero=0 out=da
+  40.0 ns opcode=ADD data=37 accum=da | zero=0 out=11
+  50.0 ns opcode=AND data=37 accum=da | zero=0 out=12
+  60.0 ns opcode=XOR data=37 accum=da | zero=0 out=ed
+  70.0 ns opcode=LDA data=37 accum=da | zero=0 out=37
+  80.0 ns opcode=STO data=37 accum=da | zero=0 out=da
+  90.0 ns opcode=JMP data=37 accum=00 | zero=1 out=00
+ 100.0 ns opcode=ADD data=07 accum=12 | zero=0 out=19
+ 110.0 ns opcode=AND data=1f accum=35 | zero=0 out=15
+ 120.0 ns opcode=XOR data=1e accum=1d | zero=0 out=03
+ 130.0 ns opcode=LDA data=72 accum=00 | zero=1 out=72
+ 140.0 ns opcode=STO data=00 accum=10 | zero=0 out=10
+ALU TEST PASSED
+Simulation complete via $finish(1) at time 140 NS + 0
+./alu_test.sv:71       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:12:12 -03  (total: 00:00:03)
