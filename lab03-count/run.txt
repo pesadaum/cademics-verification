@@ -113,3 +113,207 @@ Simulation complete via $finish(1) at time 135 NS + 0
 ./counter_test.sv:84       $finish;
 xcelium> exit
 TOOL:	xrun(64)	22.03-s001: Exiting on Mar 04, 2024 at 19:01:43 -03  (total: 00:00:01)
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+   "-f files.f" referenced on the xrun command line
+xrun: *F,BDARGF: command line argument file 'files.f' could not be opened for reading.
+xrun: *W,WLDNO: The given file wild card *.v did not have a match.
+TOOL:	xrun(64)	22.03-s001: Started on Mar 20, 2024 at 17:18:22 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+xrun: *E,FILEMIS: Cannot find the provided file *.v.
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 20, 2024 at 17:18:23 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 20, 2024 at 17:19:02 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: counter.sv
+	module worklib.counter:sv
+		errors: 0, warnings: 0
+file: counter_test.sv
+	module worklib.counter_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter:sv <0x0f847bc3>
+			streams:   2, words:   529
+		worklib.counter_test:sv <0x7558984b>
+			streams:  12, words: 26011
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 8       8
+		Scalar wires:              4       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            3       3
+		Pseudo assignments:        6       6
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.counter_test:sv
+Loading snapshot worklib.counter_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+time=   0ns clk=1 rst_=x load=x enable=x data=xx count=xx
+time=   5ns clk=0 rst_=0 load=x enable=x data=xx count=00
+time=  10ns clk=1 rst_=0 load=x enable=x data=xx count=00
+time=  15ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time=  20ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+time=  25ns clk=0 rst_=1 load=0 enable=1 data=xx count=01
+time=  30ns clk=1 rst_=1 load=0 enable=1 data=xx count=02
+time=  35ns clk=0 rst_=1 load=0 enable=1 data=xx count=02
+time=  40ns clk=1 rst_=1 load=0 enable=1 data=xx count=03
+time=  45ns clk=0 rst_=1 load=0 enable=1 data=xx count=03
+time=  50ns clk=1 rst_=1 load=0 enable=1 data=xx count=04
+time=  55ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  60ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  65ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  70ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  75ns clk=0 rst_=1 load=1 enable=0 data=15 count=04
+time=  80ns clk=1 rst_=1 load=1 enable=0 data=15 count=15
+time=  85ns clk=0 rst_=1 load=1 enable=1 data=1d count=15
+time=  90ns clk=1 rst_=1 load=1 enable=1 data=1d count=1d
+time=  95ns clk=0 rst_=1 load=0 enable=1 data=xx count=1d
+time= 100ns clk=1 rst_=1 load=0 enable=1 data=xx count=1e
+time= 105ns clk=0 rst_=1 load=0 enable=1 data=xx count=1e
+time= 110ns clk=1 rst_=1 load=0 enable=1 data=xx count=1f
+time= 115ns clk=0 rst_=1 load=0 enable=1 data=xx count=1f
+time= 120ns clk=1 rst_=1 load=0 enable=1 data=xx count=00
+time= 125ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time= 130ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+COUNTER TEST PASSED
+Simulation complete via $finish(1) at time 135 NS + 0
+./counter_test.sv:84       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 20, 2024 at 17:19:04 -03  (total: 00:00:02)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 20, 2024 at 18:01:34 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: counter.sv
+	module worklib.counter:sv
+		errors: 0, warnings: 0
+file: counter_test.sv
+	module worklib.counter_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter:sv <0x0e5ef2bf>
+			streams:   2, words:   529
+		worklib.counter_test:sv <0x46b8a959>
+			streams:  12, words: 26011
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 8       8
+		Scalar wires:              4       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            3       3
+		Pseudo assignments:        6       6
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.counter_test:sv
+Loading snapshot worklib.counter_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+time=   0ns clk=1 rst_=x load=x enable=x data=xx count=xx
+time=   5ns clk=0 rst_=0 load=x enable=x data=xx count=00
+time=  10ns clk=1 rst_=0 load=x enable=x data=xx count=00
+time=  15ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time=  20ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+time=  25ns clk=0 rst_=1 load=0 enable=1 data=xx count=01
+time=  30ns clk=1 rst_=1 load=0 enable=1 data=xx count=02
+time=  35ns clk=0 rst_=1 load=0 enable=1 data=xx count=02
+time=  40ns clk=1 rst_=1 load=0 enable=1 data=xx count=03
+time=  45ns clk=0 rst_=1 load=0 enable=1 data=xx count=03
+time=  50ns clk=1 rst_=1 load=0 enable=1 data=xx count=04
+time=  55ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  60ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  65ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  70ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  75ns clk=0 rst_=1 load=1 enable=0 data=15 count=04
+time=  80ns clk=1 rst_=1 load=1 enable=0 data=15 count=15
+time=  85ns clk=0 rst_=1 load=1 enable=1 data=1d count=15
+time=  90ns clk=1 rst_=1 load=1 enable=1 data=1d count=1d
+time=  95ns clk=0 rst_=1 load=0 enable=1 data=xx count=1d
+time= 100ns clk=1 rst_=1 load=0 enable=1 data=xx count=1e
+time= 105ns clk=0 rst_=1 load=0 enable=1 data=xx count=1e
+time= 110ns clk=1 rst_=1 load=0 enable=1 data=xx count=1f
+time= 115ns clk=0 rst_=1 load=0 enable=1 data=xx count=1f
+time= 120ns clk=1 rst_=1 load=0 enable=1 data=xx count=00
+time= 125ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time= 130ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+COUNTER TEST PASSED
+Simulation complete via $finish(1) at time 135 NS + 0
+./counter_test.sv:84       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 20, 2024 at 18:01:36 -03  (total: 00:00:02)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 20, 2024 at 18:02:17 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Mar 20 18:01:33 2024
+	actual:   Wed Mar 20 18:02:16 2024
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                   2       2
+		Registers:                 8       8
+		Scalar wires:              4       -
+		Vectored wires:            3       -
+		Always blocks:             2       2
+		Initial blocks:            3       3
+		Pseudo assignments:        6       6
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.counter_test:sv
+Loading snapshot worklib.counter_test:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+time=   0ns clk=1 rst_=x load=x enable=x data=xx count=xx
+time=   5ns clk=0 rst_=0 load=x enable=x data=xx count=00
+time=  10ns clk=1 rst_=0 load=x enable=x data=xx count=00
+time=  15ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time=  20ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+time=  25ns clk=0 rst_=1 load=0 enable=1 data=xx count=01
+time=  30ns clk=1 rst_=1 load=0 enable=1 data=xx count=02
+time=  35ns clk=0 rst_=1 load=0 enable=1 data=xx count=02
+time=  40ns clk=1 rst_=1 load=0 enable=1 data=xx count=03
+time=  45ns clk=0 rst_=1 load=0 enable=1 data=xx count=03
+time=  50ns clk=1 rst_=1 load=0 enable=1 data=xx count=04
+time=  55ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  60ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  65ns clk=0 rst_=1 load=0 enable=0 data=xx count=04
+time=  70ns clk=1 rst_=1 load=0 enable=0 data=xx count=04
+time=  75ns clk=0 rst_=1 load=1 enable=0 data=15 count=04
+time=  80ns clk=1 rst_=1 load=1 enable=0 data=15 count=15
+time=  85ns clk=0 rst_=1 load=1 enable=1 data=1d count=15
+time=  90ns clk=1 rst_=1 load=1 enable=1 data=1d count=1d
+time=  95ns clk=0 rst_=1 load=0 enable=1 data=xx count=1d
+time= 100ns clk=1 rst_=1 load=0 enable=1 data=xx count=1e
+time= 105ns clk=0 rst_=1 load=0 enable=1 data=xx count=1e
+time= 110ns clk=1 rst_=1 load=0 enable=1 data=xx count=1f
+time= 115ns clk=0 rst_=1 load=0 enable=1 data=xx count=1f
+time= 120ns clk=1 rst_=1 load=0 enable=1 data=xx count=00
+time= 125ns clk=0 rst_=1 load=0 enable=1 data=xx count=00
+time= 130ns clk=1 rst_=1 load=0 enable=1 data=xx count=01
+COUNTER TEST PASSED
+Simulation complete via $finish(1) at time 135 NS + 0
+./counter_test.sv:84       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 20, 2024 at 18:02:18 -03  (total: 00:00:01)

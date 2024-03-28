@@ -1,0 +1,2630 @@
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:48:16 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+file: mem_test.sv
+        write_mem(i, address, debug);
+                           |
+xmvlog: *E,UNDIDN (mem_test.sv,62|27): 'address': undeclared identifier [12.5(IEEE)].
+	module worklib.mem_test:sv
+		errors: 1, warnings: 0
+file: mem.sv
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:48:17 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:50:03 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                   |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|19): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+        write_mem(i, i, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+          read_mem(i, rdata, debug);
+                   |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|19): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:50:03 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:53:24 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+        write_mem(i, i, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:53:25 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:56:06 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+        write_mem(i, i, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:56:07 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:57:04 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+        write_mem(i, i * 7'b1, debug);
+                       |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|23): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:57:05 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:57:57 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 3, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:57:57 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 11:58:25 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem:sv <0x2a8481e4>
+			streams:   4, words:  1538
+		worklib.mem_test:sv <0x5be97602>
+			streams:  12, words: 10945
+		worklib.top:sv <0x28eafaa4>
+			streams:   2, words:   534
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              26      26
+		Scalar wires:            4       -
+		Vectored wires:          3       -
+		Always blocks:           3       3
+		Initial blocks:          4       4
+		Pseudo assignments:      1       1
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+Write addr: 0000; write data: 0000
+Write addr: 0001; write data: 0000
+Write addr: 0002; write data: 0000
+Write addr: 0003; write data: 0000
+Write addr: 0004; write data: 0000
+Write addr: 0005; write data: 0000
+Write addr: 0006; write data: 0000
+Write addr: 0007; write data: 0000
+Write addr: 0008; write data: 0000
+Write addr: 0009; write data: 0000
+Write addr: 000a; write data: 0000
+Write addr: 000b; write data: 0000
+Write addr: 000c; write data: 0000
+Write addr: 000d; write data: 0000
+Write addr: 000e; write data: 0000
+Write addr: 000f; write data: 0000
+Write addr: 0010; write data: 0000
+Write addr: 0011; write data: 0000
+Write addr: 0012; write data: 0000
+Write addr: 0013; write data: 0000
+Write addr: 0014; write data: 0000
+Write addr: 0015; write data: 0000
+Write addr: 0016; write data: 0000
+Write addr: 0017; write data: 0000
+Write addr: 0018; write data: 0000
+Write addr: 0019; write data: 0000
+Write addr: 001a; write data: 0000
+Write addr: 001b; write data: 0000
+Write addr: 001c; write data: 0000
+Write addr: 001d; write data: 0000
+Write addr: 001e; write data: 0000
+Write addr: 001f; write data: 0000
+read addr: 001f; read data: 0000
+TEST PASSED
+Data = Address Test
+Write addr: 0000; write data: 0000
+Write addr: 0001; write data: 0001
+Write addr: 0002; write data: 0002
+Write addr: 0003; write data: 0003
+Write addr: 0004; write data: 0004
+Write addr: 0005; write data: 0005
+Write addr: 0006; write data: 0006
+Write addr: 0007; write data: 0007
+Write addr: 0008; write data: 0008
+Write addr: 0009; write data: 0009
+Write addr: 000a; write data: 000a
+Write addr: 000b; write data: 000b
+Write addr: 000c; write data: 000c
+Write addr: 000d; write data: 000d
+Write addr: 000e; write data: 000e
+Write addr: 000f; write data: 000f
+Write addr: 0010; write data: 0010
+Write addr: 0011; write data: 0011
+Write addr: 0012; write data: 0012
+Write addr: 0013; write data: 0013
+Write addr: 0014; write data: 0014
+Write addr: 0015; write data: 0015
+Write addr: 0016; write data: 0016
+Write addr: 0017; write data: 0017
+Write addr: 0018; write data: 0018
+Write addr: 0019; write data: 0019
+Write addr: 001a; write data: 001a
+Write addr: 001b; write data: 001b
+Write addr: 001c; write data: 001c
+Write addr: 001d; write data: 001d
+Write addr: 001e; write data: 001e
+Write addr: 001f; write data: 001f
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0000
+MEMORY TEST TIMEOUT
+Simulation complete via $finish(1) at time 40 US + 0
+./mem_test.sv:34     $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 11:58:27 -03  (total: 00:00:02)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 12:10:03 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 11:58:24 2024
+	actual:   Mon Mar 25 12:10:02 2024
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+        write_mem(i, i, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 12:10:03 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 12:55:53 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 11:58:24 2024
+	actual:   Mon Mar 25 12:55:53 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem_test:sv <0x43a71eee>
+			streams:  11, words: 11020
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              26      26
+		Scalar wires:            4       -
+		Vectored wires:          3       -
+		Always blocks:           3       3
+		Initial blocks:          3       3
+		Pseudo assignments:      1       1
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+Write - Address: 0  Data:00
+Write - Address: 1  Data:00
+Write - Address: 2  Data:00
+Write - Address: 3  Data:00
+Write - Address: 4  Data:00
+Write - Address: 5  Data:00
+Write - Address: 6  Data:00
+Write - Address: 7  Data:00
+Write - Address: 8  Data:00
+Write - Address: 9  Data:00
+Write - Address:10  Data:00
+Write - Address:11  Data:00
+Write - Address:12  Data:00
+Write - Address:13  Data:00
+Write - Address:14  Data:00
+Write - Address:15  Data:00
+Write - Address:16  Data:00
+Write - Address:17  Data:00
+Write - Address:18  Data:00
+Write - Address:19  Data:00
+Write - Address:20  Data:00
+Write - Address:21  Data:00
+Write - Address:22  Data:00
+Write - Address:23  Data:00
+Write - Address:24  Data:00
+Write - Address:25  Data:00
+Write - Address:26  Data:00
+Write - Address:27  Data:00
+Write - Address:28  Data:00
+Write - Address:29  Data:00
+Write - Address:30  Data:00
+Write - Address:31  Data:00
+Read  - Address: 0  Data:00
+Read  - Address: 1  Data:00
+Read  - Address: 2  Data:00
+Read  - Address: 3  Data:00
+Read  - Address: 4  Data:00
+Read  - Address: 5  Data:00
+Read  - Address: 6  Data:00
+Read  - Address: 7  Data:00
+Read  - Address: 8  Data:00
+Read  - Address: 9  Data:00
+Read  - Address:10  Data:00
+Read  - Address:11  Data:00
+Read  - Address:12  Data:00
+Read  - Address:13  Data:00
+Read  - Address:14  Data:00
+Read  - Address:15  Data:00
+Read  - Address:16  Data:00
+Read  - Address:17  Data:00
+Read  - Address:18  Data:00
+Read  - Address:19  Data:00
+Read  - Address:20  Data:00
+Read  - Address:21  Data:00
+Read  - Address:22  Data:00
+Read  - Address:23  Data:00
+Read  - Address:24  Data:00
+Read  - Address:25  Data:00
+Read  - Address:26  Data:00
+Read  - Address:27  Data:00
+Read  - Address:28  Data:00
+Read  - Address:29  Data:00
+Read  - Address:30  Data:00
+Read  - Address:31  Data:00
+Test Passed - No Errors!
+Data = Address Test
+Write - Address: 0  Data:00
+Write - Address: 1  Data:01
+Write - Address: 2  Data:02
+Write - Address: 3  Data:03
+Write - Address: 4  Data:04
+Write - Address: 5  Data:05
+Write - Address: 6  Data:06
+Write - Address: 7  Data:07
+Write - Address: 8  Data:08
+Write - Address: 9  Data:09
+Write - Address:10  Data:0a
+Write - Address:11  Data:0b
+Write - Address:12  Data:0c
+Write - Address:13  Data:0d
+Write - Address:14  Data:0e
+Write - Address:15  Data:0f
+Write - Address:16  Data:10
+Write - Address:17  Data:11
+Write - Address:18  Data:12
+Write - Address:19  Data:13
+Write - Address:20  Data:14
+Write - Address:21  Data:15
+Write - Address:22  Data:16
+Write - Address:23  Data:17
+Write - Address:24  Data:18
+Write - Address:25  Data:19
+Write - Address:26  Data:1a
+Write - Address:27  Data:1b
+Write - Address:28  Data:1c
+Write - Address:29  Data:1d
+Write - Address:30  Data:1e
+Write - Address:31  Data:1f
+Read  - Address: 0  Data:00
+Read  - Address: 1  Data:01
+Read  - Address: 2  Data:02
+Read  - Address: 3  Data:03
+Read  - Address: 4  Data:04
+Read  - Address: 5  Data:05
+Read  - Address: 6  Data:06
+Read  - Address: 7  Data:07
+Read  - Address: 8  Data:08
+Read  - Address: 9  Data:09
+Read  - Address:10  Data:0a
+Read  - Address:11  Data:0b
+Read  - Address:12  Data:0c
+Read  - Address:13  Data:0d
+Read  - Address:14  Data:0e
+Read  - Address:15  Data:0f
+Read  - Address:16  Data:10
+Read  - Address:17  Data:11
+Read  - Address:18  Data:12
+Read  - Address:19  Data:13
+Read  - Address:20  Data:14
+Read  - Address:21  Data:15
+Read  - Address:22  Data:16
+Read  - Address:23  Data:17
+Read  - Address:24  Data:18
+Read  - Address:25  Data:19
+Read  - Address:26  Data:1a
+Read  - Address:27  Data:1b
+Read  - Address:28  Data:1c
+Read  - Address:29  Data:1d
+Read  - Address:30  Data:1e
+Read  - Address:31  Data:1f
+Test Passed - No Errors!
+Simulation complete via $finish(1) at time 2550 NS + 1
+./mem_test.sv:66     $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 12:55:55 -03  (total: 00:00:02)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 12:58:16 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 12:55:53 2024
+	actual:   Mon Mar 25 12:58:16 2024
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'integer' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,49|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+        write_mem(i, i, debug);
+                     |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|21): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'int' instead).
+          read_mem(i, rdata, debug);
+                          |
+xmvlog: *E,TYCMPAT (mem_test.sv,67|26): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [7:0] of logic' but found 'packed array' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+      addr <= address;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,99|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [7:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 6, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 12:58:17 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 13:02:26 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 12:55:53 2024
+	actual:   Mon Mar 25 13:02:26 2024
+file: mem_test.sv
+        write_mem(i, 0, debug);
+                  |
+xmvlog: *E,TYCMPAT (mem_test.sv,45|18): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [4:0] of logic' but found 'int' instead).
+        write_mem(i, i, debug);
+                  |
+xmvlog: *E,TYCMPAT (mem_test.sv,62|18): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [4:0] of logic' but found 'int' instead).
+      addr <= wr_addr;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,86|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [4:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 3, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 13:02:27 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 13:03:42 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 12:55:53 2024
+	actual:   Mon Mar 25 13:03:41 2024
+file: mem_test.sv
+        write_mem (i, 0, debug);
+                   |
+xmvlog: *E,TYCMPAT (mem_test.sv,44|19): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [4:0] of logic' but found 'int' instead).
+        write_mem (i, i, debug);
+                   |
+xmvlog: *E,TYCMPAT (mem_test.sv,57|19): formal and actual do not have assignment compatible data types (expecting datatype compatible with 'unpacked array [4:0] of logic' but found 'int' instead).
+      addr <= wr_addr;
+                    |
+xmvlog: *E,TYCMPAT (mem_test.sv,76|20): assignment operator type check failed (expecting datatype compatible with 'packed array' but found 'unpacked array [4:0] of logic' instead).
+	module worklib.mem_test:sv
+		errors: 3, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 13:03:42 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 13:04:25 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 12:55:53 2024
+	actual:   Mon Mar 25 13:04:25 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+          error_status = checkit (i, rdata, 8'h00);
+                               |
+xmelab: *E,CUVUNF (./mem_test.sv,49|31): Hierarchical name component lookup failed for 'checkit' at 'top.test'.
+          error_status = checkit (i, rdata, i);
+                               |
+xmelab: *E,CUVUNF (./mem_test.sv,62|31): Hierarchical name component lookup failed for 'checkit' at 'top.test'.
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 13:04:26 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 25, 2024 at 13:05:10 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Mon Mar 25 12:55:53 2024
+	actual:   Mon Mar 25 13:05:09 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem_test:sv <0x6483660e>
+			streams:  12, words: 10867
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              26      26
+		Scalar wires:            4       -
+		Vectored wires:          3       -
+		Always blocks:           3       3
+		Initial blocks:          4       4
+		Pseudo assignments:      1       1
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+Write addr: 0000; write data: 0000
+Write addr: 0000; write data: 0001
+Write addr: 0000; write data: 0002
+Write addr: 0000; write data: 0003
+Write addr: 0000; write data: 0004
+Write addr: 0000; write data: 0005
+Write addr: 0000; write data: 0006
+Write addr: 0000; write data: 0007
+Write addr: 0000; write data: 0008
+Write addr: 0000; write data: 0009
+Write addr: 0000; write data: 000a
+Write addr: 0000; write data: 000b
+Write addr: 0000; write data: 000c
+Write addr: 0000; write data: 000d
+Write addr: 0000; write data: 000e
+Write addr: 0000; write data: 000f
+Write addr: 0000; write data: 0010
+Write addr: 0000; write data: 0011
+Write addr: 0000; write data: 0012
+Write addr: 0000; write data: 0013
+Write addr: 0000; write data: 0014
+Write addr: 0000; write data: 0015
+Write addr: 0000; write data: 0016
+Write addr: 0000; write data: 0017
+Write addr: 0000; write data: 0018
+Write addr: 0000; write data: 0019
+Write addr: 0000; write data: 001a
+Write addr: 0000; write data: 001b
+Write addr: 0000; write data: 001c
+Write addr: 0000; write data: 001d
+Write addr: 0000; write data: 001e
+Write addr: 0000; write data: 001f
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0001
+read addr: 0000; read data: 0002
+read addr: 0000; read data: 0003
+read addr: 0000; read data: 0004
+read addr: 0000; read data: 0005
+read addr: 0000; read data: 0006
+read addr: 0000; read data: 0007
+read addr: 0000; read data: 0008
+read addr: 0000; read data: 0009
+read addr: 0000; read data: 000a
+read addr: 0000; read data: 000b
+read addr: 0000; read data: 000c
+read addr: 0000; read data: 000d
+read addr: 0000; read data: 000e
+read addr: 0000; read data: 000f
+read addr: 0000; read data: 0010
+read addr: 0000; read data: 0011
+read addr: 0000; read data: 0012
+read addr: 0000; read data: 0013
+read addr: 0000; read data: 0014
+read addr: 0000; read data: 0015
+read addr: 0000; read data: 0016
+read addr: 0000; read data: 0017
+read addr: 0000; read data: 0018
+read addr: 0000; read data: 0019
+read addr: 0000; read data: 001a
+read addr: 0000; read data: 001b
+read addr: 0000; read data: 001c
+read addr: 0000; read data: 001d
+read addr: 0000; read data: 001e
+read addr: 0000; read data: 001f
+TEST PASSED
+Data = Address Test
+Write addr: 0000; write data: 0000
+Write addr: 0001; write data: 0001
+Write addr: 0002; write data: 0002
+Write addr: 0003; write data: 0003
+Write addr: 0004; write data: 0004
+Write addr: 0005; write data: 0005
+Write addr: 0006; write data: 0006
+Write addr: 0007; write data: 0007
+Write addr: 0008; write data: 0008
+Write addr: 0009; write data: 0009
+Write addr: 000a; write data: 000a
+Write addr: 000b; write data: 000b
+Write addr: 000c; write data: 000c
+Write addr: 000d; write data: 000d
+Write addr: 000e; write data: 000e
+Write addr: 000f; write data: 000f
+Write addr: 0010; write data: 0010
+Write addr: 0011; write data: 0011
+Write addr: 0012; write data: 0012
+Write addr: 0013; write data: 0013
+Write addr: 0014; write data: 0014
+Write addr: 0015; write data: 0015
+Write addr: 0016; write data: 0016
+Write addr: 0017; write data: 0017
+Write addr: 0018; write data: 0018
+Write addr: 0019; write data: 0019
+Write addr: 001a; write data: 001a
+Write addr: 001b; write data: 001b
+Write addr: 001c; write data: 001c
+Write addr: 001d; write data: 001d
+Write addr: 001e; write data: 001e
+Write addr: 001f; write data: 001f
+read addr: 0000; read data: 0000
+read addr: 0001; read data: 0001
+read addr: 0002; read data: 0002
+read addr: 0003; read data: 0003
+read addr: 0004; read data: 0004
+read addr: 0005; read data: 0005
+read addr: 0006; read data: 0006
+read addr: 0007; read data: 0007
+read addr: 0008; read data: 0008
+read addr: 0009; read data: 0009
+read addr: 000a; read data: 000a
+read addr: 000b; read data: 000b
+read addr: 000c; read data: 000c
+read addr: 000d; read data: 000d
+read addr: 000e; read data: 000e
+read addr: 000f; read data: 000f
+read addr: 0010; read data: 0010
+read addr: 0011; read data: 0011
+read addr: 0012; read data: 0012
+read addr: 0013; read data: 0013
+read addr: 0014; read data: 0014
+read addr: 0015; read data: 0015
+read addr: 0016; read data: 0016
+read addr: 0017; read data: 0017
+read addr: 0018; read data: 0018
+read addr: 0019; read data: 0019
+read addr: 001a; read data: 001a
+read addr: 001b; read data: 001b
+read addr: 001c; read data: 001c
+read addr: 001d; read data: 001d
+read addr: 001e; read data: 001e
+read addr: 001f; read data: 001f
+TEST PASSED
+Simulation complete via $finish(1) at time 2550 NS + 1
+./mem_test.sv:67       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 25, 2024 at 13:05:12 -03  (total: 00:00:02)

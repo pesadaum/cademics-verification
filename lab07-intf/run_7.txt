@@ -1,0 +1,179 @@
+TOOL:	xrun(64)	22.03-s001: Started on Mar 28, 2024 at 11:21:57 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './mem.sv' is newer than expected.
+	expected: Thu Mar 28 11:14:34 2024
+	actual:   Thu Mar 28 11:21:56 2024
+file: mem_test.sv
+	module worklib.mem_test:sv
+		errors: 0, warnings: 0
+file: mem.sv
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+file: mem_intf.sv
+	interface worklib.mem_intf:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem:sv <0x5723acef>
+			streams:   4, words:  1515
+		worklib.mem_test:sv <0x75a9c14e>
+			streams:  12, words: 10669
+		worklib.top:sv <0x0f6c1bf2>
+			streams:   1, words:   253
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Interfaces:              1       1
+		Registers:              26      26
+		Scalar wires:            1       -
+		Always blocks:           3       3
+		Initial blocks:          4       4
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Clear Memory Test
+Write addr: 0000; write data: 0000
+Write addr: 0000; write data: 0001
+Write addr: 0000; write data: 0002
+Write addr: 0000; write data: 0003
+Write addr: 0000; write data: 0004
+Write addr: 0000; write data: 0005
+Write addr: 0000; write data: 0006
+Write addr: 0000; write data: 0007
+Write addr: 0000; write data: 0008
+Write addr: 0000; write data: 0009
+Write addr: 0000; write data: 000a
+Write addr: 0000; write data: 000b
+Write addr: 0000; write data: 000c
+Write addr: 0000; write data: 000d
+Write addr: 0000; write data: 000e
+Write addr: 0000; write data: 000f
+Write addr: 0000; write data: 0010
+Write addr: 0000; write data: 0011
+Write addr: 0000; write data: 0012
+Write addr: 0000; write data: 0013
+Write addr: 0000; write data: 0014
+Write addr: 0000; write data: 0015
+Write addr: 0000; write data: 0016
+Write addr: 0000; write data: 0017
+Write addr: 0000; write data: 0018
+Write addr: 0000; write data: 0019
+Write addr: 0000; write data: 001a
+Write addr: 0000; write data: 001b
+Write addr: 0000; write data: 001c
+Write addr: 0000; write data: 001d
+Write addr: 0000; write data: 001e
+Write addr: 0000; write data: 001f
+read addr: 0000; read data: 0000
+read addr: 0000; read data: 0001
+read addr: 0000; read data: 0002
+read addr: 0000; read data: 0003
+read addr: 0000; read data: 0004
+read addr: 0000; read data: 0005
+read addr: 0000; read data: 0006
+read addr: 0000; read data: 0007
+read addr: 0000; read data: 0008
+read addr: 0000; read data: 0009
+read addr: 0000; read data: 000a
+read addr: 0000; read data: 000b
+read addr: 0000; read data: 000c
+read addr: 0000; read data: 000d
+read addr: 0000; read data: 000e
+read addr: 0000; read data: 000f
+read addr: 0000; read data: 0010
+read addr: 0000; read data: 0011
+read addr: 0000; read data: 0012
+read addr: 0000; read data: 0013
+read addr: 0000; read data: 0014
+read addr: 0000; read data: 0015
+read addr: 0000; read data: 0016
+read addr: 0000; read data: 0017
+read addr: 0000; read data: 0018
+read addr: 0000; read data: 0019
+read addr: 0000; read data: 001a
+read addr: 0000; read data: 001b
+read addr: 0000; read data: 001c
+read addr: 0000; read data: 001d
+read addr: 0000; read data: 001e
+read addr: 0000; read data: 001f
+TEST PASSED
+Data = Address Test
+Write addr: 0000; write data: 0000
+Write addr: 0001; write data: 0001
+Write addr: 0002; write data: 0002
+Write addr: 0003; write data: 0003
+Write addr: 0004; write data: 0004
+Write addr: 0005; write data: 0005
+Write addr: 0006; write data: 0006
+Write addr: 0007; write data: 0007
+Write addr: 0008; write data: 0008
+Write addr: 0009; write data: 0009
+Write addr: 000a; write data: 000a
+Write addr: 000b; write data: 000b
+Write addr: 000c; write data: 000c
+Write addr: 000d; write data: 000d
+Write addr: 000e; write data: 000e
+Write addr: 000f; write data: 000f
+Write addr: 0010; write data: 0010
+Write addr: 0011; write data: 0011
+Write addr: 0012; write data: 0012
+Write addr: 0013; write data: 0013
+Write addr: 0014; write data: 0014
+Write addr: 0015; write data: 0015
+Write addr: 0016; write data: 0016
+Write addr: 0017; write data: 0017
+Write addr: 0018; write data: 0018
+Write addr: 0019; write data: 0019
+Write addr: 001a; write data: 001a
+Write addr: 001b; write data: 001b
+Write addr: 001c; write data: 001c
+Write addr: 001d; write data: 001d
+Write addr: 001e; write data: 001e
+Write addr: 001f; write data: 001f
+read addr: 0000; read data: 0000
+read addr: 0001; read data: 0001
+read addr: 0002; read data: 0002
+read addr: 0003; read data: 0003
+read addr: 0004; read data: 0004
+read addr: 0005; read data: 0005
+read addr: 0006; read data: 0006
+read addr: 0007; read data: 0007
+read addr: 0008; read data: 0008
+read addr: 0009; read data: 0009
+read addr: 000a; read data: 000a
+read addr: 000b; read data: 000b
+read addr: 000c; read data: 000c
+read addr: 000d; read data: 000d
+read addr: 000e; read data: 000e
+read addr: 000f; read data: 000f
+read addr: 0010; read data: 0010
+read addr: 0011; read data: 0011
+read addr: 0012; read data: 0012
+read addr: 0013; read data: 0013
+read addr: 0014; read data: 0014
+read addr: 0015; read data: 0015
+read addr: 0016; read data: 0016
+read addr: 0017; read data: 0017
+read addr: 0018; read data: 0018
+read addr: 0019; read data: 0019
+read addr: 001a; read data: 001a
+read addr: 001b; read data: 001b
+read addr: 001c; read data: 001c
+read addr: 001d; read data: 001d
+read addr: 001e; read data: 001e
+read addr: 001f; read data: 001f
+TEST PASSED
+Simulation complete via $finish(1) at time 2550 NS + 1
+./mem_test.sv:62       $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 28, 2024 at 11:21:59 -03  (total: 00:00:02)
