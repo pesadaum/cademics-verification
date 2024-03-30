@@ -1,0 +1,71 @@
+TOOL:	xrun(64)	22.03-s001: Started on Mar 30, 2024 at 13:44:18 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: flipflop.sv
+	module worklib.flipflop:sv
+		errors: 0, warnings: 0
+file: flipflop_test.sv
+    int i = 0;
+      |
+xmvlog: *E,BADDCL (flipflop_test.sv,45|6): identify declaration while expecting a statement.
+	module worklib.testflop:sv
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 30, 2024 at 13:44:18 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 30, 2024 at 13:44:46 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: flipflop_test.sv
+    int i;
+      |
+xmvlog: *E,BADDCL (flipflop_test.sv,45|6): identify declaration while expecting a statement.
+	module worklib.testflop:sv
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 30, 2024 at 13:44:47 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 30, 2024 at 13:44:57 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: flipflop_test.sv
+    ##3;
+     |
+xmvlog: *E,CLKCND (flipflop_test.sv,48|5): Cycle delays require a default clocking block [SystemVerilog].
+	module worklib.testflop:sv
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 30, 2024 at 13:44:58 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Mar 30, 2024 at 13:45:15 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: flipflop_test.sv
+	module worklib.testflop:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testflop
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.flipflop:sv <0x298c4737>
+			streams:   1, words:   310
+		worklib.testflop:sv <0x735ec4af>
+			streams:  10, words:  6724
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        2       -
+		Vectored wires:      3       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Clocking blocks:     1       1
+		Clocking items:      3       3
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.testflop:sv
+Loading snapshot worklib.testflop:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 160 NS + 0
+./flipflop_test.sv:49     $finish();
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Mar 30, 2024 at 13:45:17 -03  (total: 00:00:02)
