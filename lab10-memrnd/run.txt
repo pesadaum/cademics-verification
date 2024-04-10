@@ -1,0 +1,53 @@
+TOOL:	xrun(64)	22.03-s001: Started on Apr 09, 2024 at 21:04:57 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem.sv
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+file: mem_intf.sv
+	interface worklib.mem_intf:sv
+		errors: 0, warnings: 0
+file: mem_test.sv
+          rand data dist {
+             |
+xmvlog: *E,ILLPRI (mem_test.sv,79|13): illegal expression primary [4.2(IEEE)].
+          rand data dist {
+             |
+xmvlog: *E,BADPFW (mem_test.sv,79|13): The modifier 'rand' is only legal within a class declaration.
+          rand data dist {
+                       |
+xmvlog: *E,EXPLPA (mem_test.sv,79|23): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+            [8'h61:8'h7a] := 2 // 20% prob ASCII lowercase
+            |
+xmvlog: *E,EXPLPA (mem_test.sv,81|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+          };};
+            |
+xmvlog: *E,EXPENM (mem_test.sv,82|12): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.mem_test:sv
+		errors: 5, warnings: 0
+file: top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 09, 2024 at 21:04:57 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 09, 2024 at 21:06:50 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: mem_test.sv
+          rand data dist {
+             |
+xmvlog: *E,ILLPRI (mem_test.sv,79|13): illegal expression primary [4.2(IEEE)].
+          rand data dist {
+             |
+xmvlog: *E,BADPFW (mem_test.sv,79|13): The modifier 'rand' is only legal within a class declaration.
+          rand data dist {
+                       |
+xmvlog: *E,EXPLPA (mem_test.sv,79|23): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+            [8'h61:8'h7a] := 2 // 20% prob ASCII lowercase
+            |
+xmvlog: *E,EXPLPA (mem_test.sv,81|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+          };};
+            |
+xmvlog: *E,EXPENM (mem_test.sv,82|12): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.mem_test:sv
+		errors: 5, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 09, 2024 at 21:06:51 -03  (total: 00:00:01)
