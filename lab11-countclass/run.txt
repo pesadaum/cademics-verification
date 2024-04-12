@@ -1,0 +1,1287 @@
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:30:21 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Apr 10 14:07:30 2024
+	actual:   Fri Apr 12 10:30:20 2024
+file: counter.sv
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'cnt' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'min' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'max' .
+	module worklib.counterclass:sv
+		errors: 3, warnings: 0
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:30:22 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:31:01 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Apr 10 14:07:30 2024
+	actual:   Fri Apr 12 10:31:00 2024
+file: counter.sv
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'cnt' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'min' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'max' .
+	module worklib.counterclass:sv
+		errors: 3, warnings: 0
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:31:01 -03  (total: 00:00:00)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:32:53 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Apr 10 14:07:30 2024
+	actual:   Fri Apr 12 10:32:52 2024
+file: counter.sv
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'cnt' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'min' .
+  class timer extends upCounter;
+                               |
+xmvlog: *E,FAABP3 (counter.sv,113|31): The implicit call to super.new() is missing an actual argument for the formal argument 'max' .
+	module worklib.counterclass:sv
+		errors: 3, warnings: 0
+xmvlog: *W,NOTOPL: no top-level unit found, must have recursive instances.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:32:54 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:33:36 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Apr 10 14:07:30 2024
+	actual:   Fri Apr 12 10:33:35 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x5363d104>
+			streams:  34, words: 17697
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 41      49
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+upCounter incremented. Current value is: 1
+Time is (24hr format):  1: 0: 1
+upCounter incremented. Current value is: 2
+Time is (24hr format):  1: 0: 2
+upCounter incremented. Current value is: 3
+Time is (24hr format):  1: 0: 3
+upCounter incremented. Current value is: 4
+Time is (24hr format):  1: 0: 4
+upCounter incremented. Current value is: 5
+Time is (24hr format):  1: 0: 5
+upCounter incremented. Current value is: 6
+Time is (24hr format):  1: 0: 6
+upCounter incremented. Current value is: 7
+Time is (24hr format):  1: 0: 7
+upCounter incremented. Current value is: 8
+Time is (24hr format):  1: 0: 8
+upCounter incremented. Current value is: 9
+Time is (24hr format):  1: 0: 9
+upCounter incremented. Current value is: 10
+Time is (24hr format):  1: 0:10
+upCounter incremented. Current value is: 11
+Time is (24hr format):  1: 0:11
+upCounter incremented. Current value is: 12
+Time is (24hr format):  1: 0:12
+upCounter incremented. Current value is: 13
+Time is (24hr format):  1: 0:13
+upCounter incremented. Current value is: 14
+Time is (24hr format):  1: 0:14
+upCounter incremented. Current value is: 15
+Time is (24hr format):  1: 0:15
+upCounter incremented. Current value is: 16
+Time is (24hr format):  1: 0:16
+upCounter incremented. Current value is: 17
+Time is (24hr format):  1: 0:17
+upCounter incremented. Current value is: 18
+Time is (24hr format):  1: 0:18
+upCounter incremented. Current value is: 19
+Time is (24hr format):  1: 0:19
+upCounter incremented. Current value is: 20
+Time is (24hr format):  1: 0:20
+upCounter incremented. Current value is: 21
+Time is (24hr format):  1: 0:21
+upCounter incremented. Current value is: 22
+Time is (24hr format):  1: 0:22
+upCounter incremented. Current value is: 23
+Time is (24hr format):  1: 0:23
+upCounter incremented. Current value is: 24
+Time is (24hr format):  1: 0:24
+upCounter incremented. Current value is: 25
+Time is (24hr format):  1: 0:25
+upCounter incremented. Current value is: 26
+Time is (24hr format):  1: 0:26
+upCounter incremented. Current value is: 27
+Time is (24hr format):  1: 0:27
+upCounter incremented. Current value is: 28
+Time is (24hr format):  1: 0:28
+upCounter incremented. Current value is: 29
+Time is (24hr format):  1: 0:29
+upCounter incremented. Current value is: 30
+Time is (24hr format):  1: 0:30
+upCounter incremented. Current value is: 31
+Time is (24hr format):  1: 0:31
+upCounter incremented. Current value is: 32
+Time is (24hr format):  1: 0:32
+upCounter incremented. Current value is: 33
+Time is (24hr format):  1: 0:33
+upCounter incremented. Current value is: 34
+Time is (24hr format):  1: 0:34
+upCounter incremented. Current value is: 35
+Time is (24hr format):  1: 0:35
+upCounter incremented. Current value is: 36
+Time is (24hr format):  1: 0:36
+upCounter incremented. Current value is: 37
+Time is (24hr format):  1: 0:37
+upCounter incremented. Current value is: 38
+Time is (24hr format):  1: 0:38
+upCounter incremented. Current value is: 39
+Time is (24hr format):  1: 0:39
+upCounter incremented. Current value is: 40
+Time is (24hr format):  1: 0:40
+upCounter incremented. Current value is: 41
+Time is (24hr format):  1: 0:41
+upCounter incremented. Current value is: 42
+Time is (24hr format):  1: 0:42
+upCounter incremented. Current value is: 43
+Time is (24hr format):  1: 0:43
+upCounter incremented. Current value is: 44
+Time is (24hr format):  1: 0:44
+upCounter incremented. Current value is: 45
+Time is (24hr format):  1: 0:45
+upCounter incremented. Current value is: 46
+Time is (24hr format):  1: 0:46
+upCounter incremented. Current value is: 47
+Time is (24hr format):  1: 0:47
+upCounter incremented. Current value is: 48
+Time is (24hr format):  1: 0:48
+upCounter incremented. Current value is: 49
+Time is (24hr format):  1: 0:49
+upCounter incremented. Current value is: 50
+Time is (24hr format):  1: 0:50
+upCounter incremented. Current value is: 51
+Time is (24hr format):  1: 0:51
+upCounter incremented. Current value is: 52
+Time is (24hr format):  1: 0:52
+upCounter incremented. Current value is: 53
+Time is (24hr format):  1: 0:53
+upCounter incremented. Current value is: 54
+Time is (24hr format):  1: 0:54
+upCounter incremented. Current value is: 55
+Time is (24hr format):  1: 0:55
+upCounter incremented. Current value is: 56
+Time is (24hr format):  1: 0:56
+upCounter incremented. Current value is: 57
+Time is (24hr format):  1: 0:57
+upCounter incremented. Current value is: 58
+Time is (24hr format):  1: 0:58
+upCounter incremented. Current value is: 59
+Time is (24hr format):  1: 0:59
+upCounter incremented. Current value is: 1
+Time is (24hr format):  1: 1: 0
+upCounter incremented. Current value is: 1
+Time is (24hr format):  1: 1: 1
+upCounter incremented. Current value is: 2
+Time is (24hr format):  1: 1: 2
+upCounter incremented. Current value is: 3
+Time is (24hr format):  1: 1: 3
+upCounter incremented. Current value is: 4
+Time is (24hr format):  1: 1: 4
+upCounter incremented. Current value is: 5
+Time is (24hr format):  1: 1: 5
+upCounter incremented. Current value is: 6
+Time is (24hr format):  1: 1: 6
+upCounter incremented. Current value is: 7
+Time is (24hr format):  1: 1: 7
+upCounter incremented. Current value is: 8
+Time is (24hr format):  1: 1: 8
+upCounter incremented. Current value is: 9
+Time is (24hr format):  1: 1: 9
+upCounter incremented. Current value is: 10
+Time is (24hr format):  1: 1:10
+upCounter incremented. Current value is: 11
+Time is (24hr format):  1: 1:11
+upCounter incremented. Current value is: 12
+Time is (24hr format):  1: 1:12
+upCounter incremented. Current value is: 13
+Time is (24hr format):  1: 1:13
+upCounter incremented. Current value is: 14
+Time is (24hr format):  1: 1:14
+upCounter incremented. Current value is: 15
+Time is (24hr format):  1: 1:15
+upCounter incremented. Current value is: 16
+Time is (24hr format):  1: 1:16
+upCounter incremented. Current value is: 17
+Time is (24hr format):  1: 1:17
+upCounter incremented. Current value is: 18
+Time is (24hr format):  1: 1:18
+upCounter incremented. Current value is: 19
+Time is (24hr format):  1: 1:19
+upCounter incremented. Current value is: 20
+Time is (24hr format):  1: 1:20
+upCounter incremented. Current value is: 21
+Time is (24hr format):  1: 1:21
+upCounter incremented. Current value is: 22
+Time is (24hr format):  1: 1:22
+upCounter incremented. Current value is: 23
+Time is (24hr format):  1: 1:23
+upCounter incremented. Current value is: 24
+Time is (24hr format):  1: 1:24
+upCounter incremented. Current value is: 25
+Time is (24hr format):  1: 1:25
+upCounter incremented. Current value is: 26
+Time is (24hr format):  1: 1:26
+upCounter incremented. Current value is: 27
+Time is (24hr format):  1: 1:27
+upCounter incremented. Current value is: 28
+Time is (24hr format):  1: 1:28
+upCounter incremented. Current value is: 29
+Time is (24hr format):  1: 1:29
+upCounter incremented. Current value is: 30
+Time is (24hr format):  1: 1:30
+upCounter incremented. Current value is: 31
+Time is (24hr format):  1: 1:31
+upCounter incremented. Current value is: 32
+Time is (24hr format):  1: 1:32
+upCounter incremented. Current value is: 33
+Time is (24hr format):  1: 1:33
+upCounter incremented. Current value is: 34
+Time is (24hr format):  1: 1:34
+upCounter incremented. Current value is: 35
+Time is (24hr format):  1: 1:35
+upCounter incremented. Current value is: 36
+Time is (24hr format):  1: 1:36
+upCounter incremented. Current value is: 37
+Time is (24hr format):  1: 1:37
+upCounter incremented. Current value is: 38
+Time is (24hr format):  1: 1:38
+upCounter incremented. Current value is: 39
+Time is (24hr format):  1: 1:39
+upCounter incremented. Current value is: 40
+Time is (24hr format):  1: 1:40
+upCounter incremented. Current value is: 41
+Time is (24hr format):  1: 1:41
+upCounter incremented. Current value is: 42
+Time is (24hr format):  1: 1:42
+upCounter incremented. Current value is: 43
+Time is (24hr format):  1: 1:43
+upCounter incremented. Current value is: 44
+Time is (24hr format):  1: 1:44
+upCounter incremented. Current value is: 45
+Time is (24hr format):  1: 1:45
+upCounter incremented. Current value is: 46
+Time is (24hr format):  1: 1:46
+upCounter incremented. Current value is: 47
+Time is (24hr format):  1: 1:47
+upCounter incremented. Current value is: 48
+Time is (24hr format):  1: 1:48
+upCounter incremented. Current value is: 49
+Time is (24hr format):  1: 1:49
+upCounter incremented. Current value is: 50
+Time is (24hr format):  1: 1:50
+upCounter incremented. Current value is: 51
+Time is (24hr format):  1: 1:51
+upCounter incremented. Current value is: 52
+Time is (24hr format):  1: 1:52
+upCounter incremented. Current value is: 53
+Time is (24hr format):  1: 1:53
+upCounter incremented. Current value is: 54
+Time is (24hr format):  1: 1:54
+upCounter incremented. Current value is: 55
+Time is (24hr format):  1: 1:55
+upCounter incremented. Current value is: 56
+Time is (24hr format):  1: 1:56
+upCounter incremented. Current value is: 57
+Time is (24hr format):  1: 1:57
+upCounter incremented. Current value is: 58
+Time is (24hr format):  1: 1:58
+upCounter incremented. Current value is: 59
+Time is (24hr format):  1: 1:59
+upCounter incremented. Current value is: 2
+Time is (24hr format):  1: 2: 0
+upCounter incremented. Current value is: 1
+Time is (24hr format):  1: 2: 1
+upCounter incremented. Current value is: 2
+Time is (24hr format):  1: 2: 2
+upCounter incremented. Current value is: 3
+Time is (24hr format):  1: 2: 3
+upCounter incremented. Current value is: 4
+Time is (24hr format):  1: 2: 4
+upCounter incremented. Current value is: 5
+Time is (24hr format):  1: 2: 5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:33:37 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:34:45 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:33:35 2024
+	actual:   Fri Apr 12 10:34:44 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x160cca45>
+			streams:  34, words: 17874
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Time is (24hr format):  1: 0: 1
+Time is (24hr format):  1: 0: 2
+Time is (24hr format):  1: 0: 3
+Time is (24hr format):  1: 0: 4
+Time is (24hr format):  1: 0: 5
+Time is (24hr format):  1: 0: 6
+Time is (24hr format):  1: 0: 7
+Time is (24hr format):  1: 0: 8
+Time is (24hr format):  1: 0: 9
+Time is (24hr format):  1: 0:10
+Time is (24hr format):  1: 0:11
+Time is (24hr format):  1: 0:12
+Time is (24hr format):  1: 0:13
+Time is (24hr format):  1: 0:14
+Time is (24hr format):  1: 0:15
+Time is (24hr format):  1: 0:16
+Time is (24hr format):  1: 0:17
+Time is (24hr format):  1: 0:18
+Time is (24hr format):  1: 0:19
+Time is (24hr format):  1: 0:20
+Time is (24hr format):  1: 0:21
+Time is (24hr format):  1: 0:22
+Time is (24hr format):  1: 0:23
+Time is (24hr format):  1: 0:24
+Time is (24hr format):  1: 0:25
+Time is (24hr format):  1: 0:26
+Time is (24hr format):  1: 0:27
+Time is (24hr format):  1: 0:28
+Time is (24hr format):  1: 0:29
+Time is (24hr format):  1: 0:30
+Time is (24hr format):  1: 0:31
+Time is (24hr format):  1: 0:32
+Time is (24hr format):  1: 0:33
+Time is (24hr format):  1: 0:34
+Time is (24hr format):  1: 0:35
+Time is (24hr format):  1: 0:36
+Time is (24hr format):  1: 0:37
+Time is (24hr format):  1: 0:38
+Time is (24hr format):  1: 0:39
+Time is (24hr format):  1: 0:40
+Time is (24hr format):  1: 0:41
+Time is (24hr format):  1: 0:42
+Time is (24hr format):  1: 0:43
+Time is (24hr format):  1: 0:44
+Time is (24hr format):  1: 0:45
+Time is (24hr format):  1: 0:46
+Time is (24hr format):  1: 0:47
+Time is (24hr format):  1: 0:48
+Time is (24hr format):  1: 0:49
+Time is (24hr format):  1: 0:50
+Time is (24hr format):  1: 0:51
+Time is (24hr format):  1: 0:52
+Time is (24hr format):  1: 0:53
+Time is (24hr format):  1: 0:54
+Time is (24hr format):  1: 0:55
+Time is (24hr format):  1: 0:56
+Time is (24hr format):  1: 0:57
+Time is (24hr format):  1: 0:58
+Time is (24hr format):  1: 0:59
+Time is (24hr format):  1: 1: 0
+Time is (24hr format):  1: 1: 1
+Time is (24hr format):  1: 1: 2
+Time is (24hr format):  1: 1: 3
+Time is (24hr format):  1: 1: 4
+Time is (24hr format):  1: 1: 5
+Time is (24hr format):  1: 1: 6
+Time is (24hr format):  1: 1: 7
+Time is (24hr format):  1: 1: 8
+Time is (24hr format):  1: 1: 9
+Time is (24hr format):  1: 1:10
+Time is (24hr format):  1: 1:11
+Time is (24hr format):  1: 1:12
+Time is (24hr format):  1: 1:13
+Time is (24hr format):  1: 1:14
+Time is (24hr format):  1: 1:15
+Time is (24hr format):  1: 1:16
+Time is (24hr format):  1: 1:17
+Time is (24hr format):  1: 1:18
+Time is (24hr format):  1: 1:19
+Time is (24hr format):  1: 1:20
+Time is (24hr format):  1: 1:21
+Time is (24hr format):  1: 1:22
+Time is (24hr format):  1: 1:23
+Time is (24hr format):  1: 1:24
+Time is (24hr format):  1: 1:25
+Time is (24hr format):  1: 1:26
+Time is (24hr format):  1: 1:27
+Time is (24hr format):  1: 1:28
+Time is (24hr format):  1: 1:29
+Time is (24hr format):  1: 1:30
+Time is (24hr format):  1: 1:31
+Time is (24hr format):  1: 1:32
+Time is (24hr format):  1: 1:33
+Time is (24hr format):  1: 1:34
+Time is (24hr format):  1: 1:35
+Time is (24hr format):  1: 1:36
+Time is (24hr format):  1: 1:37
+Time is (24hr format):  1: 1:38
+Time is (24hr format):  1: 1:39
+Time is (24hr format):  1: 1:40
+Time is (24hr format):  1: 1:41
+Time is (24hr format):  1: 1:42
+Time is (24hr format):  1: 1:43
+Time is (24hr format):  1: 1:44
+Time is (24hr format):  1: 1:45
+Time is (24hr format):  1: 1:46
+Time is (24hr format):  1: 1:47
+Time is (24hr format):  1: 1:48
+Time is (24hr format):  1: 1:49
+Time is (24hr format):  1: 1:50
+Time is (24hr format):  1: 1:51
+Time is (24hr format):  1: 1:52
+Time is (24hr format):  1: 1:53
+Time is (24hr format):  1: 1:54
+Time is (24hr format):  1: 1:55
+Time is (24hr format):  1: 1:56
+Time is (24hr format):  1: 1:57
+Time is (24hr format):  1: 1:58
+Time is (24hr format):  1: 1:59
+Time is (24hr format):  1: 2: 0
+Time is (24hr format):  1: 2: 1
+Time is (24hr format):  1: 2: 2
+Time is (24hr format):  1: 2: 3
+Time is (24hr format):  1: 2: 4
+Time is (24hr format):  1: 2: 5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:34:46 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:36:18 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:34:44 2024
+	actual:   Fri Apr 12 10:36:17 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x160cca45>
+			streams:  34, words: 17874
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Time is (24hr format):  1: 0: 1
+Time is (24hr format):  1: 0: 2
+Time is (24hr format):  1: 0: 3
+Time is (24hr format):  1: 0: 4
+Time is (24hr format):  1: 0: 5
+Time is (24hr format):  1: 0: 6
+Time is (24hr format):  1: 0: 7
+Time is (24hr format):  1: 0: 8
+Time is (24hr format):  1: 0: 9
+Time is (24hr format):  1: 0:10
+Time is (24hr format):  1: 0:11
+Time is (24hr format):  1: 0:12
+Time is (24hr format):  1: 0:13
+Time is (24hr format):  1: 0:14
+Time is (24hr format):  1: 0:15
+Time is (24hr format):  1: 0:16
+Time is (24hr format):  1: 0:17
+Time is (24hr format):  1: 0:18
+Time is (24hr format):  1: 0:19
+Time is (24hr format):  1: 0:20
+Time is (24hr format):  1: 0:21
+Time is (24hr format):  1: 0:22
+Time is (24hr format):  1: 0:23
+Time is (24hr format):  1: 0:24
+Time is (24hr format):  1: 0:25
+Time is (24hr format):  1: 0:26
+Time is (24hr format):  1: 0:27
+Time is (24hr format):  1: 0:28
+Time is (24hr format):  1: 0:29
+Time is (24hr format):  1: 0:30
+Time is (24hr format):  1: 0:31
+Time is (24hr format):  1: 0:32
+Time is (24hr format):  1: 0:33
+Time is (24hr format):  1: 0:34
+Time is (24hr format):  1: 0:35
+Time is (24hr format):  1: 0:36
+Time is (24hr format):  1: 0:37
+Time is (24hr format):  1: 0:38
+Time is (24hr format):  1: 0:39
+Time is (24hr format):  1: 0:40
+Time is (24hr format):  1: 0:41
+Time is (24hr format):  1: 0:42
+Time is (24hr format):  1: 0:43
+Time is (24hr format):  1: 0:44
+Time is (24hr format):  1: 0:45
+Time is (24hr format):  1: 0:46
+Time is (24hr format):  1: 0:47
+Time is (24hr format):  1: 0:48
+Time is (24hr format):  1: 0:49
+Time is (24hr format):  1: 0:50
+Time is (24hr format):  1: 0:51
+Time is (24hr format):  1: 0:52
+Time is (24hr format):  1: 0:53
+Time is (24hr format):  1: 0:54
+Time is (24hr format):  1: 0:55
+Time is (24hr format):  1: 0:56
+Time is (24hr format):  1: 0:57
+Time is (24hr format):  1: 0:58
+Time is (24hr format):  1: 0:59
+Time is (24hr format):  1: 1: 0
+Time is (24hr format):  1: 1: 1
+Time is (24hr format):  1: 1: 2
+Time is (24hr format):  1: 1: 3
+Time is (24hr format):  1: 1: 4
+Time is (24hr format):  1: 1: 5
+Time is (24hr format):  1: 1: 6
+Time is (24hr format):  1: 1: 7
+Time is (24hr format):  1: 1: 8
+Time is (24hr format):  1: 1: 9
+Time is (24hr format):  1: 1:10
+Time is (24hr format):  1: 1:11
+Time is (24hr format):  1: 1:12
+Time is (24hr format):  1: 1:13
+Time is (24hr format):  1: 1:14
+Time is (24hr format):  1: 1:15
+Time is (24hr format):  1: 1:16
+Time is (24hr format):  1: 1:17
+Time is (24hr format):  1: 1:18
+Time is (24hr format):  1: 1:19
+Time is (24hr format):  1: 1:20
+Time is (24hr format):  1: 1:21
+Time is (24hr format):  1: 1:22
+Time is (24hr format):  1: 1:23
+Time is (24hr format):  1: 1:24
+Time is (24hr format):  1: 1:25
+Time is (24hr format):  1: 1:26
+Time is (24hr format):  1: 1:27
+Time is (24hr format):  1: 1:28
+Time is (24hr format):  1: 1:29
+Time is (24hr format):  1: 1:30
+Time is (24hr format):  1: 1:31
+Time is (24hr format):  1: 1:32
+Time is (24hr format):  1: 1:33
+Time is (24hr format):  1: 1:34
+Time is (24hr format):  1: 1:35
+Time is (24hr format):  1: 1:36
+Time is (24hr format):  1: 1:37
+Time is (24hr format):  1: 1:38
+Time is (24hr format):  1: 1:39
+Time is (24hr format):  1: 1:40
+Time is (24hr format):  1: 1:41
+Time is (24hr format):  1: 1:42
+Time is (24hr format):  1: 1:43
+Time is (24hr format):  1: 1:44
+Time is (24hr format):  1: 1:45
+Time is (24hr format):  1: 1:46
+Time is (24hr format):  1: 1:47
+Time is (24hr format):  1: 1:48
+Time is (24hr format):  1: 1:49
+Time is (24hr format):  1: 1:50
+Time is (24hr format):  1: 1:51
+Time is (24hr format):  1: 1:52
+Time is (24hr format):  1: 1:53
+Time is (24hr format):  1: 1:54
+Time is (24hr format):  1: 1:55
+Time is (24hr format):  1: 1:56
+Time is (24hr format):  1: 1:57
+Time is (24hr format):  1: 1:58
+Time is (24hr format):  1: 1:59
+Time is (24hr format):  1: 2: 0
+Time is (24hr format):  1: 2: 1
+Time is (24hr format):  1: 2: 2
+Time is (24hr format):  1: 2: 3
+Time is (24hr format):  1: 2: 4
+Time is (24hr format):  1: 2: 5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:36:19 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:36:40 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:36:17 2024
+	actual:   Fri Apr 12 10:36:39 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x160cca45>
+			streams:  34, words: 17874
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Time is (24hr format): 1:0:1
+Time is (24hr format): 1:0:2
+Time is (24hr format): 1:0:3
+Time is (24hr format): 1:0:4
+Time is (24hr format): 1:0:5
+Time is (24hr format): 1:0:6
+Time is (24hr format): 1:0:7
+Time is (24hr format): 1:0:8
+Time is (24hr format): 1:0:9
+Time is (24hr format): 1:0:10
+Time is (24hr format): 1:0:11
+Time is (24hr format): 1:0:12
+Time is (24hr format): 1:0:13
+Time is (24hr format): 1:0:14
+Time is (24hr format): 1:0:15
+Time is (24hr format): 1:0:16
+Time is (24hr format): 1:0:17
+Time is (24hr format): 1:0:18
+Time is (24hr format): 1:0:19
+Time is (24hr format): 1:0:20
+Time is (24hr format): 1:0:21
+Time is (24hr format): 1:0:22
+Time is (24hr format): 1:0:23
+Time is (24hr format): 1:0:24
+Time is (24hr format): 1:0:25
+Time is (24hr format): 1:0:26
+Time is (24hr format): 1:0:27
+Time is (24hr format): 1:0:28
+Time is (24hr format): 1:0:29
+Time is (24hr format): 1:0:30
+Time is (24hr format): 1:0:31
+Time is (24hr format): 1:0:32
+Time is (24hr format): 1:0:33
+Time is (24hr format): 1:0:34
+Time is (24hr format): 1:0:35
+Time is (24hr format): 1:0:36
+Time is (24hr format): 1:0:37
+Time is (24hr format): 1:0:38
+Time is (24hr format): 1:0:39
+Time is (24hr format): 1:0:40
+Time is (24hr format): 1:0:41
+Time is (24hr format): 1:0:42
+Time is (24hr format): 1:0:43
+Time is (24hr format): 1:0:44
+Time is (24hr format): 1:0:45
+Time is (24hr format): 1:0:46
+Time is (24hr format): 1:0:47
+Time is (24hr format): 1:0:48
+Time is (24hr format): 1:0:49
+Time is (24hr format): 1:0:50
+Time is (24hr format): 1:0:51
+Time is (24hr format): 1:0:52
+Time is (24hr format): 1:0:53
+Time is (24hr format): 1:0:54
+Time is (24hr format): 1:0:55
+Time is (24hr format): 1:0:56
+Time is (24hr format): 1:0:57
+Time is (24hr format): 1:0:58
+Time is (24hr format): 1:0:59
+Time is (24hr format): 1:1:0
+Time is (24hr format): 1:1:1
+Time is (24hr format): 1:1:2
+Time is (24hr format): 1:1:3
+Time is (24hr format): 1:1:4
+Time is (24hr format): 1:1:5
+Time is (24hr format): 1:1:6
+Time is (24hr format): 1:1:7
+Time is (24hr format): 1:1:8
+Time is (24hr format): 1:1:9
+Time is (24hr format): 1:1:10
+Time is (24hr format): 1:1:11
+Time is (24hr format): 1:1:12
+Time is (24hr format): 1:1:13
+Time is (24hr format): 1:1:14
+Time is (24hr format): 1:1:15
+Time is (24hr format): 1:1:16
+Time is (24hr format): 1:1:17
+Time is (24hr format): 1:1:18
+Time is (24hr format): 1:1:19
+Time is (24hr format): 1:1:20
+Time is (24hr format): 1:1:21
+Time is (24hr format): 1:1:22
+Time is (24hr format): 1:1:23
+Time is (24hr format): 1:1:24
+Time is (24hr format): 1:1:25
+Time is (24hr format): 1:1:26
+Time is (24hr format): 1:1:27
+Time is (24hr format): 1:1:28
+Time is (24hr format): 1:1:29
+Time is (24hr format): 1:1:30
+Time is (24hr format): 1:1:31
+Time is (24hr format): 1:1:32
+Time is (24hr format): 1:1:33
+Time is (24hr format): 1:1:34
+Time is (24hr format): 1:1:35
+Time is (24hr format): 1:1:36
+Time is (24hr format): 1:1:37
+Time is (24hr format): 1:1:38
+Time is (24hr format): 1:1:39
+Time is (24hr format): 1:1:40
+Time is (24hr format): 1:1:41
+Time is (24hr format): 1:1:42
+Time is (24hr format): 1:1:43
+Time is (24hr format): 1:1:44
+Time is (24hr format): 1:1:45
+Time is (24hr format): 1:1:46
+Time is (24hr format): 1:1:47
+Time is (24hr format): 1:1:48
+Time is (24hr format): 1:1:49
+Time is (24hr format): 1:1:50
+Time is (24hr format): 1:1:51
+Time is (24hr format): 1:1:52
+Time is (24hr format): 1:1:53
+Time is (24hr format): 1:1:54
+Time is (24hr format): 1:1:55
+Time is (24hr format): 1:1:56
+Time is (24hr format): 1:1:57
+Time is (24hr format): 1:1:58
+Time is (24hr format): 1:1:59
+Time is (24hr format): 1:2:0
+Time is (24hr format): 1:2:1
+Time is (24hr format): 1:2:2
+Time is (24hr format): 1:2:3
+Time is (24hr format): 1:2:4
+Time is (24hr format): 1:2:5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:36:41 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:38:46 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:36:39 2024
+	actual:   Fri Apr 12 10:38:45 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    t1.load(23, 59, 00);
+          |
+xmelab: *E,CUVUNF (./counter.sv,158|10): Hierarchical name component lookup failed for 't1' at 'counterclass'.
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:38:47 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:39:01 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:36:39 2024
+	actual:   Fri Apr 12 10:39:00 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x6d9f4c88>
+			streams:  35, words: 18991
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Time is (24hr format): 1:0:1
+Time is (24hr format): 1:0:2
+Time is (24hr format): 1:0:3
+Time is (24hr format): 1:0:4
+Time is (24hr format): 1:0:5
+Time is (24hr format): 1:0:6
+Time is (24hr format): 1:0:7
+Time is (24hr format): 1:0:8
+Time is (24hr format): 1:0:9
+Time is (24hr format): 1:0:10
+Time is (24hr format): 1:1:1
+Time is (24hr format): 1:1:2
+Time is (24hr format): 1:1:3
+Time is (24hr format): 1:1:4
+Time is (24hr format): 1:1:5
+Time is (24hr format): 1:1:6
+Time is (24hr format): 1:1:7
+Time is (24hr format): 1:1:8
+Time is (24hr format): 1:1:9
+Time is (24hr format): 1:1:10
+Time is (24hr format): 1:1:11
+Time is (24hr format): 1:1:12
+Time is (24hr format): 1:1:13
+Time is (24hr format): 1:1:14
+Time is (24hr format): 1:1:15
+Time is (24hr format): 1:1:16
+Time is (24hr format): 1:1:17
+Time is (24hr format): 1:1:18
+Time is (24hr format): 1:1:19
+Time is (24hr format): 1:1:20
+Time is (24hr format): 1:1:21
+Time is (24hr format): 1:1:22
+Time is (24hr format): 1:1:23
+Time is (24hr format): 1:1:24
+Time is (24hr format): 1:1:25
+Time is (24hr format): 1:1:26
+Time is (24hr format): 1:1:27
+Time is (24hr format): 1:1:28
+Time is (24hr format): 1:1:29
+Time is (24hr format): 1:1:30
+Time is (24hr format): 1:1:31
+Time is (24hr format): 1:1:32
+Time is (24hr format): 1:1:33
+Time is (24hr format): 1:1:34
+Time is (24hr format): 1:1:35
+Time is (24hr format): 1:1:36
+Time is (24hr format): 1:1:37
+Time is (24hr format): 1:1:38
+Time is (24hr format): 1:1:39
+Time is (24hr format): 1:1:40
+Time is (24hr format): 1:1:41
+Time is (24hr format): 1:1:42
+Time is (24hr format): 1:1:43
+Time is (24hr format): 1:1:44
+Time is (24hr format): 1:1:45
+Time is (24hr format): 1:1:46
+Time is (24hr format): 1:1:47
+Time is (24hr format): 1:1:48
+Time is (24hr format): 1:1:49
+Time is (24hr format): 1:1:50
+Time is (24hr format): 1:1:51
+Time is (24hr format): 1:1:52
+Time is (24hr format): 1:1:53
+Time is (24hr format): 1:1:54
+Time is (24hr format): 1:1:55
+Time is (24hr format): 1:1:56
+Time is (24hr format): 1:1:57
+Time is (24hr format): 1:1:58
+Time is (24hr format): 1:1:59
+Time is (24hr format): 1:2:0
+Time is (24hr format): 1:2:1
+Time is (24hr format): 1:2:2
+Time is (24hr format): 1:2:3
+Time is (24hr format): 1:2:4
+Time is (24hr format): 1:2:5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:39:02 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:39:55 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:39:00 2024
+	actual:   Fri Apr 12 10:39:54 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x3145f40e>
+			streams:  35, words: 19394
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+Time is (24hr format): 1:0:1
+Time is (24hr format): 1:0:2
+Time is (24hr format): 1:0:3
+Time is (24hr format): 1:0:4
+Time is (24hr format): 1:0:5
+Time is (24hr format): 1:0:6
+Time is (24hr format): 1:0:7
+Time is (24hr format): 1:0:8
+Time is (24hr format): 1:0:9
+Time is (24hr format): 1:0:10
+Loading values to timer
+Time is (24hr format): 1:1:1
+Time is (24hr format): 1:1:2
+Time is (24hr format): 1:1:3
+Time is (24hr format): 1:1:4
+Time is (24hr format): 1:1:5
+Time is (24hr format): 1:1:6
+Time is (24hr format): 1:1:7
+Time is (24hr format): 1:1:8
+Time is (24hr format): 1:1:9
+Time is (24hr format): 1:1:10
+Time is (24hr format): 1:1:11
+Time is (24hr format): 1:1:12
+Time is (24hr format): 1:1:13
+Time is (24hr format): 1:1:14
+Time is (24hr format): 1:1:15
+Time is (24hr format): 1:1:16
+Time is (24hr format): 1:1:17
+Time is (24hr format): 1:1:18
+Time is (24hr format): 1:1:19
+Time is (24hr format): 1:1:20
+Time is (24hr format): 1:1:21
+Time is (24hr format): 1:1:22
+Time is (24hr format): 1:1:23
+Time is (24hr format): 1:1:24
+Time is (24hr format): 1:1:25
+Time is (24hr format): 1:1:26
+Time is (24hr format): 1:1:27
+Time is (24hr format): 1:1:28
+Time is (24hr format): 1:1:29
+Time is (24hr format): 1:1:30
+Time is (24hr format): 1:1:31
+Time is (24hr format): 1:1:32
+Time is (24hr format): 1:1:33
+Time is (24hr format): 1:1:34
+Time is (24hr format): 1:1:35
+Time is (24hr format): 1:1:36
+Time is (24hr format): 1:1:37
+Time is (24hr format): 1:1:38
+Time is (24hr format): 1:1:39
+Time is (24hr format): 1:1:40
+Time is (24hr format): 1:1:41
+Time is (24hr format): 1:1:42
+Time is (24hr format): 1:1:43
+Time is (24hr format): 1:1:44
+Time is (24hr format): 1:1:45
+Time is (24hr format): 1:1:46
+Time is (24hr format): 1:1:47
+Time is (24hr format): 1:1:48
+Time is (24hr format): 1:1:49
+Time is (24hr format): 1:1:50
+Time is (24hr format): 1:1:51
+Time is (24hr format): 1:1:52
+Time is (24hr format): 1:1:53
+Time is (24hr format): 1:1:54
+Time is (24hr format): 1:1:55
+Time is (24hr format): 1:1:56
+Time is (24hr format): 1:1:57
+Time is (24hr format): 1:1:58
+Time is (24hr format): 1:1:59
+Time is (24hr format): 1:2:0
+Time is (24hr format): 1:2:1
+Time is (24hr format): 1:2:2
+Time is (24hr format): 1:2:3
+Time is (24hr format): 1:2:4
+Time is (24hr format): 1:2:5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:39:56 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:41:17 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:39:54 2024
+	actual:   Fri Apr 12 10:41:16 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x67d1eff0>
+			streams:  35, words: 20903
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+         23         58          0
+          1          0          0
+Time is (24hr format): 1:0:1
+Time is (24hr format): 1:0:2
+Time is (24hr format): 1:0:3
+Time is (24hr format): 1:0:4
+Time is (24hr format): 1:0:5
+Time is (24hr format): 1:0:6
+Time is (24hr format): 1:0:7
+Time is (24hr format): 1:0:8
+Time is (24hr format): 1:0:9
+Time is (24hr format): 1:0:10
+Loading values to timer
+Time is (24hr format): 1:1:1
+Time is (24hr format): 1:1:2
+Time is (24hr format): 1:1:3
+Time is (24hr format): 1:1:4
+Time is (24hr format): 1:1:5
+Time is (24hr format): 1:1:6
+Time is (24hr format): 1:1:7
+Time is (24hr format): 1:1:8
+Time is (24hr format): 1:1:9
+Time is (24hr format): 1:1:10
+Time is (24hr format): 1:1:11
+Time is (24hr format): 1:1:12
+Time is (24hr format): 1:1:13
+Time is (24hr format): 1:1:14
+Time is (24hr format): 1:1:15
+Time is (24hr format): 1:1:16
+Time is (24hr format): 1:1:17
+Time is (24hr format): 1:1:18
+Time is (24hr format): 1:1:19
+Time is (24hr format): 1:1:20
+Time is (24hr format): 1:1:21
+Time is (24hr format): 1:1:22
+Time is (24hr format): 1:1:23
+Time is (24hr format): 1:1:24
+Time is (24hr format): 1:1:25
+Time is (24hr format): 1:1:26
+Time is (24hr format): 1:1:27
+Time is (24hr format): 1:1:28
+Time is (24hr format): 1:1:29
+Time is (24hr format): 1:1:30
+Time is (24hr format): 1:1:31
+Time is (24hr format): 1:1:32
+Time is (24hr format): 1:1:33
+Time is (24hr format): 1:1:34
+Time is (24hr format): 1:1:35
+Time is (24hr format): 1:1:36
+Time is (24hr format): 1:1:37
+Time is (24hr format): 1:1:38
+Time is (24hr format): 1:1:39
+Time is (24hr format): 1:1:40
+Time is (24hr format): 1:1:41
+Time is (24hr format): 1:1:42
+Time is (24hr format): 1:1:43
+Time is (24hr format): 1:1:44
+Time is (24hr format): 1:1:45
+Time is (24hr format): 1:1:46
+Time is (24hr format): 1:1:47
+Time is (24hr format): 1:1:48
+Time is (24hr format): 1:1:49
+Time is (24hr format): 1:1:50
+Time is (24hr format): 1:1:51
+Time is (24hr format): 1:1:52
+Time is (24hr format): 1:1:53
+Time is (24hr format): 1:1:54
+Time is (24hr format): 1:1:55
+Time is (24hr format): 1:1:56
+Time is (24hr format): 1:1:57
+Time is (24hr format): 1:1:58
+Time is (24hr format): 1:1:59
+Time is (24hr format): 1:2:0
+Time is (24hr format): 1:2:1
+Time is (24hr format): 1:2:2
+Time is (24hr format): 1:2:3
+Time is (24hr format): 1:2:4
+Time is (24hr format): 1:2:5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:41:18 -03  (total: 00:00:01)
+TOOL:	xrun(64)	22.03-s001: Started on Apr 12, 2024 at 10:42:36 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Fri Apr 12 10:41:16 2024
+	actual:   Fri Apr 12 10:42:35 2024
+file: counter.sv
+	module worklib.counterclass:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counterclass:sv <0x118c2bdb>
+			streams:  35, words: 20197
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 42      50
+		Initial blocks:             4       4
+		SV Class declarations:      4       4
+		SV Class specializations:   4       4
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+          1          0          0
+Time is (24hr format): 1:0:1
+Time is (24hr format): 1:0:2
+Time is (24hr format): 1:0:3
+Time is (24hr format): 1:0:4
+Time is (24hr format): 1:0:5
+Time is (24hr format): 1:0:6
+Time is (24hr format): 1:0:7
+Time is (24hr format): 1:0:8
+Time is (24hr format): 1:0:9
+Time is (24hr format): 1:0:10
+Loading values to timer
+Time is (24hr format): 1:1:1
+Time is (24hr format): 1:1:2
+Time is (24hr format): 1:1:3
+Time is (24hr format): 1:1:4
+Time is (24hr format): 1:1:5
+Time is (24hr format): 1:1:6
+Time is (24hr format): 1:1:7
+Time is (24hr format): 1:1:8
+Time is (24hr format): 1:1:9
+Time is (24hr format): 1:1:10
+Time is (24hr format): 1:1:11
+Time is (24hr format): 1:1:12
+Time is (24hr format): 1:1:13
+Time is (24hr format): 1:1:14
+Time is (24hr format): 1:1:15
+Time is (24hr format): 1:1:16
+Time is (24hr format): 1:1:17
+Time is (24hr format): 1:1:18
+Time is (24hr format): 1:1:19
+Time is (24hr format): 1:1:20
+Time is (24hr format): 1:1:21
+Time is (24hr format): 1:1:22
+Time is (24hr format): 1:1:23
+Time is (24hr format): 1:1:24
+Time is (24hr format): 1:1:25
+Time is (24hr format): 1:1:26
+Time is (24hr format): 1:1:27
+Time is (24hr format): 1:1:28
+Time is (24hr format): 1:1:29
+Time is (24hr format): 1:1:30
+Time is (24hr format): 1:1:31
+Time is (24hr format): 1:1:32
+Time is (24hr format): 1:1:33
+Time is (24hr format): 1:1:34
+Time is (24hr format): 1:1:35
+Time is (24hr format): 1:1:36
+Time is (24hr format): 1:1:37
+Time is (24hr format): 1:1:38
+Time is (24hr format): 1:1:39
+Time is (24hr format): 1:1:40
+Time is (24hr format): 1:1:41
+Time is (24hr format): 1:1:42
+Time is (24hr format): 1:1:43
+Time is (24hr format): 1:1:44
+Time is (24hr format): 1:1:45
+Time is (24hr format): 1:1:46
+Time is (24hr format): 1:1:47
+Time is (24hr format): 1:1:48
+Time is (24hr format): 1:1:49
+Time is (24hr format): 1:1:50
+Time is (24hr format): 1:1:51
+Time is (24hr format): 1:1:52
+Time is (24hr format): 1:1:53
+Time is (24hr format): 1:1:54
+Time is (24hr format): 1:1:55
+Time is (24hr format): 1:1:56
+Time is (24hr format): 1:1:57
+Time is (24hr format): 1:1:58
+Time is (24hr format): 1:1:59
+Time is (24hr format): 1:2:0
+Time is (24hr format): 1:2:1
+Time is (24hr format): 1:2:2
+Time is (24hr format): 1:2:3
+Time is (24hr format): 1:2:4
+Time is (24hr format): 1:2:5
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 12, 2024 at 10:42:37 -03  (total: 00:00:01)

@@ -29,26 +29,26 @@ module testflop ();
   flipflop DUV (.*);
 
   default clocking cb @(posedge clk);
-    default  input #1step output #4ns;
-    input  qout ;
-    output reset, qin;
+  default  input #1step output #4ns;
+  input  qout ;
+  output reset, qin;
 
 
   endclocking
 
-  initial begin
-    cb.qin <= 0;
-    cb.reset <= 0;
-    ##2 cb.reset <=1;
-    ##3 cb.reset <=0;
+    initial begin
+      cb.qin <= 0;
+      cb.reset <= 0;
+      ##2 cb.reset <=1;
+      ##3 cb.reset <=0;
 
-    for (int i = 0; i < 8 ; i++) begin
+      for (int i = 0; i < 8 ; i++) begin
         ##1 cb.qin <= i;
+      end
+      ##3;
+      $finish();
     end
-    ##3;
-    $finish();
-  end
 
 
 
-    endmodule
+endmodule

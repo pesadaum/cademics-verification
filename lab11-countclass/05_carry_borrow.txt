@@ -1,0 +1,80 @@
+TOOL:	xrun(64)	22.03-s001: Started on Apr 10, 2024 at 14:01:45 -03
+xrun(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './counter.sv' is newer than expected.
+	expected: Wed Apr 10 14:01:03 2024
+	actual:   Wed Apr 10 14:01:44 2024
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counterclass
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    1       1
+		Registers:                 30      35
+		Initial blocks:             3       3
+		SV Class declarations:      3       3
+		SV Class specializations:   3       3
+	Writing initial simulation snapshot: worklib.counterclass:sv
+Loading snapshot worklib.counterclass:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cadence/cadence/installsXCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+testing upCounter
+upCounter incremented. Current value is: 1
+upCounter incremented. Current value is: 2
+upCounter incremented. Current value is: 3
+upCounter incremented. Current value is: 4
+upCounter incremented. Current value is: 5
+upCounter incremented. Current value is: 6
+upCounter incremented. Current value is: 7
+upCounter incremented. Current value is: 8
+upCounter incremented. Current value is: 9
+upCounter incremented. Current value is: 10
+|-> Carry happened
+upCounter incremented. Current value is: 1
+upCounter incremented. Current value is: 2
+upCounter incremented. Current value is: 3
+upCounter incremented. Current value is: 4
+upCounter incremented. Current value is: 5
+upCounter incremented. Current value is: 6
+upCounter incremented. Current value is: 7
+upCounter incremented. Current value is: 8
+upCounter incremented. Current value is: 9
+upCounter incremented. Current value is: 10
+|-> Carry happened
+upCounter incremented. Current value is: 1
+upCounter incremented. Current value is: 2
+upCounter incremented. Current value is: 3
+testing downCounter
+|-> borrow happened
+downCounter decremented. Current value is: 9
+downCounter decremented. Current value is: 8
+downCounter decremented. Current value is: 7
+downCounter decremented. Current value is: 6
+downCounter decremented. Current value is: 5
+downCounter decremented. Current value is: 4
+downCounter decremented. Current value is: 3
+downCounter decremented. Current value is: 2
+downCounter decremented. Current value is: 1
+downCounter decremented. Current value is: 0
+|-> borrow happened
+downCounter decremented. Current value is: 9
+downCounter decremented. Current value is: 8
+downCounter decremented. Current value is: 7
+downCounter decremented. Current value is: 6
+downCounter decremented. Current value is: 5
+downCounter decremented. Current value is: 4
+downCounter decremented. Current value is: 3
+downCounter decremented. Current value is: 2
+downCounter decremented. Current value is: 1
+downCounter decremented. Current value is: 0
+|-> borrow happened
+downCounter decremented. Current value is: 9
+downCounter decremented. Current value is: 8
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	22.03-s001: Exiting on Apr 10, 2024 at 14:01:46 -03  (total: 00:00:01)

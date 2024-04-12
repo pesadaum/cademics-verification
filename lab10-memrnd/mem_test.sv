@@ -72,8 +72,6 @@ module mem_test (
 
       $display("Random data test with 0.8 and 0.2 probabilities");
 
-
-
       for (int i = 0; i < 32; i++) begin
         ok = randomize(random_data) with {
           rand data dist {
@@ -81,7 +79,7 @@ module mem_test (
             [8'h61:8'h7a] := 2 // 20% prob ASCII lowercase
           };};
 
-        mbus.write_mem (i, rand_data, 1);
+        mbus.write_mem (i, random_data, 1);
         mbus.read_mem  (i, rdata, 1);
         error_status = checkit (i, rdata, rand_data);
 
